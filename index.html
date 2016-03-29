@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Проверить ОҢАЙ</title>
+	<meta name="description" content="ОНАЙ - единая транспортная карта">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Проверить ОҢАЙ">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="icon" sizes="192x192" href="/favicon.png">
+    <link rel="shortcut icon" sizes="196x196" href="/favicon.png">
+    <link rel="shortcut icon" sizes="128x128" href="/favicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+	<meta name="application-name" content="Проверить ОҢАЙ"/>
+	<meta name="msapplication-TileColor" content="#fdbd36">
+	<meta name="msapplication-navbutton-color" content="#fdbd36"/>
+	<meta http-equiv="cleartype" content="on">
+	<meta name="google" content="notranslate"/>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="192x192" href="/favicon.png">
+    <meta name="msapplication-TileImage" content="/favicon.png" />
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file://swiftconcept.com -->
+	<!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style type="text/css">
+		body {
+			padding-top: 15px;
+			background-color: #eee;
+		}
+		.panel-default {
+		    border-color: #333;
+		}
+		.panel-default>.panel-heading {
+			background-color: #fdbd36;	
+			border-color: #333;
+		}
+		.input-group-addon {
+			background-color: #fdbd36;	
+		}
+		h1 {
+			font-family: 'Patua One', cursive;
+			font-size: 50px;
+		}
+		.btn-default, .btn-default:focus {
+			background-color: #fdbd36;
+			border-color: #333;
+    		box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 5px rgba(0,0,0,.26);
+		}
+		.btn-default:hover, .btn-default:active, .btn-default:active:focus {
+		    background-color: #fff;
+		    border-color: #333;
+		}
+		.form-control, .input-group-addon {
+			border: 1px solid #333;	
+		}
+		.card-box {
+			box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 5px rgba(0,0,0,.26);
+			min-width: 247px;	
+		}
+		.card {
+			min-width: 65px;
+		}
+		.card-select {
+			border-radius: 6px;
+    		box-shadow: 0 0 1px rgba(0,0,0,5),0 1px 15px rgba(0,0,0,5);	
+		}
+		.card-column {
+			padding-left: 0;
+    		padding-right: 0;	
+		}
+		.img-thumbnail {
+			background-color: #fdbd36;	
+			border: 0px;
+		}
+		.input-group-addon {
+			color: #000;
+		}	
+	</style>
+</head>
+<body>
+	<div class="container">
+	    <div class="row">
+	    	<div class="col-xs-12">
+	            <div class="panel panel-default card-box">
+	                <div class="panel-heading display-table" >
+	                    <div class="row display-tr" >
+	                    	<div class="col-sm-4 text-center">
+	                    		<a href="/" title="Проверить ОҢАЙ"><img src="http://onay.kz/images/onay/site-logo.png" alt="Logo" class="img-thumbnail"></a>	
+	                    	</div>
+	                    	<div class="col-sm-8 text-center">
+	                    		<div>
+	                    			<div class="col-xs-3 card-column">
+	                    				<img id="card" class="card img-responsive" src="http://onay.kz/images/onay/card.png"/>	
+	                    			</div>
+	                    			<div class="col-xs-3 card-column">
+	                    				<img id="card1" class="card img-responsive" src="http://onay.kz/images/onay/card1.png"/>	
+	                    			</div>
+	                    			<div class="col-xs-3 card-column">
+	                    				<img id="card2" class="card img-responsive" src="http://onay.kz/images/onay/card2.png"/>	
+	                    			</div>
+	                    			<div class="col-xs-3 card-column">
+	                    				<img id="card3" class="card img-responsive" src="http://onay.kz/images/onay/card3.png"/>
+	                    			</div>
+	                    		</div>
+	                    	</div>
+	                    </div>                    
+	                </div>
+	                <div class="panel-body">
+	                    <div>
+	                        <div class="row">
+	                            <div class="col-xs-12">
+	                                <div class="form-group">
+	                                    <label for="cardNumber">НОМЕР КАРТЫ</label>
+	                                    <div class="input-group">
+	                                    	<input 
+	                                            type="tel"
+	                                            class="form-control"
+	                                            name="cardNumber"
+	                                            id="cardNumber"
+	                                            placeholder="Введите номер Онай карты"
+	                                            autocomplete="cc-number"
+	                                            required 
+	                                        />
+	                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+	                                    </div>
+	                                </div>                            
+	                            </div>
+	                        </div>
+	                        <div class="row">
+	                            <div class="col-xs-12">
+	                                <button class="btn btn-default btn-lg btn-block" onclick="CheckOnay();"><strong>Проверить баланс</strong></button>
+	                            </div>
+	                        </div>
+	                        <div class="row">
+	                            <div class="col-xs-12">
+	                                <p id="check-result" style="display:none;"></p>
+	                                <!--<p class="help-block">*Информация о балансе обновляется каждые 15 минут.</p>-->
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>          
+	    	</div>
+	    	<div class="col-xs-12">
+	    		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- checkonay -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-8498859022293159"
+				     data-ad-slot="7917646261"
+				     data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>	
+	    	</div>
+	    	<div class="col-xs-12 text-center"><br>© 2016 <a href="https://www.facebook.com/Kidinfo" target="_blank">Evgeniy Maklakov</a></div>
+	    </div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript">
+		var cost = 0;
+
+		$(document).ready(
+	        function() {
+	        	$("#cardNumber").mask("9999999999999999999");
+	        	$("#cardNumber").keydown(function (e){
+	        		if(e.keyCode == 13 || e.keyCode == 9){
+						CheckOnay();
+					}
+				});
+	        	if (typeof (Storage) !== "undefined") {
+		            var onay = localStorage.getItem('onay');
+		            if (onay != null && onay != 'null' && onay.length == 19) {
+		            	$('#cardNumber').val(onay);
+		            }
+			    }
+	        }
+	    );
+
+	    function SelectCard($cardName) {
+	    	$('#card').removeClass('card-select');
+			$('#card1').removeClass('card-select');
+			$('#card2').removeClass('card-select');
+			$('#card3').removeClass('card-select');
+			if ($cardName != '') {
+				$('#' + $cardName).addClass('card-select');
+		    	if ($cardName == 'card') {
+			    	cost = 80;	
+			    } else {
+			    	cost = 40;	
+			    }	
+			}
+	    	else {
+	    		cost = 0;	
+	    	}
+		    $('#check-result').html('');
+	    }
+
+	    function CheckOnay() {
+	    	var count = $("#cardNumber").val().length;
+	    	if (count == 19) {
+	    		$('#check-result').html('<br><i class="fa fa-refresh fa-spin"></i> Получение информации...');
+		    	$('#check-result').show();
+		    	$.post('/check.php', $("#cardNumber").serialize()).success(function (r) {
+		    		try {
+		    			var result = JSON.parse(r);
+		    			var filecontent = JSON.parse(result.filecontent);
+		    			if (filecontent.type == true) {
+		                	var card = filecontent.result.pan + ' (' + filecontent.result.name + ')';
+		                	switch (filecontent.result.type) {
+	                			case "01.01": // Единая транспортная карта
+	                				SelectCard('card');
+	                				break;
+
+	                			case "01.02": // Транспортная карта школьника
+	                				SelectCard('card1');
+	                				break;
+
+	                			case "01.03": // Транспортная карта студента
+	                			case "03.04":
+	                				SelectCard('card2');
+	                				break;
+
+	                			case "01.04": // Социальная транспортная карта
+	                				SelectCard('card3');
+	                				break;
+
+	                			default:
+	                				SelectCard('');
+	                				break;		
+	                		}
+		                	//if (filecontent.result.stopList == false) {
+		                		var balance = filecontent.result.balance / 100;
+
+			                    var amountTravelStr = "";
+
+		                		if (cost != 0) {
+		                			amountTravel = Number(balance) / cost;
+		                			amountTravelStr = '<br>Количество поездок: <strong>' + Math.floor(amountTravel) + ' шт.</strong><br>Стоимость поездки: <strong>'+ cost +' тг.</strong></div>';
+		                		}
+			                    
+			                    $('#check-result').html('<br/><div class="alert alert-success" role="alert">Ваш баланс: <strong>'+ balance +' тг.</strong>' + amountTravelStr);
+		                	//}
+		                	//else {
+		                	//	var balance = filecontent.result.balance / 100;
+			                //    $('#check-result').html('<br/><div class="alert alert-danger" role="alert"><strong><i class="fa fa-exclamation-triangle"></i> Ошибка!</strong> Карта ОҢАЙ в «стоп-листе».<br>Ваш баланс: <strong>'+ balance +' тг.</strong></div>');
+			                //}
+
+			                if (typeof (Storage) !== "undefined") {
+					            localStorage.setItem('onay', $('#cardNumber').val());
+						    }
+
+						    SendEventGA('Success', 'CheckOnay', card);
+		                }
+		                else {
+		                    $('#check-result').html('<br/><div class="alert alert-danger" role="alert"><strong><i class="fa fa-exclamation-triangle"></i> Ошибка!</strong> Неверный номер ОҢАЙ карты.</div>');
+		                    SendEventGA('Errors', 'WrongNumber', $("#cardNumber").val());
+		                }
+		    		} catch(e) {
+		    			$('#check-result').html('<br/><div class="alert alert-danger" role="alert"><strong><i class="fa fa-exclamation-triangle"></i> Ошибка!</strong> Сервис ОҢАЙ временно недоступен.</div>');
+		    			SendEventGA('Errors', 'ServiceUnavailable', $("#cardNumber").val());
+		    		}
+	            }).fail(function() {
+				    $('#check-result').html('<br/><div class="alert alert-danger" role="alert"><strong><i class="fa fa-exclamation-triangle"></i> Ошибка!</strong> Сервис ОҢАЙ временно недоступен.</div>');
+				    SendEventGA('Errors', 'ServiceUnavailable', $("#cardNumber").val());
+				});	
+	    	}
+	    	else {
+	    		$('#check-result').html('<br/><div class="alert alert-danger" role="alert"><strong><i class="fa fa-exclamation-triangle"></i> Ошибка!</strong> Пожалуйста введите свой 19 значный номер карты!.</div>');	
+	    	}
+	    }
+
+	    function SendEventGA(eventCategory, eventAction, eventLabel) {
+		    ga('send', {
+		        hitType: 'event',
+		        eventCategory: eventCategory,
+		        eventAction: eventAction,
+		        eventLabel: eventLabel
+		    });
+		}
+	</script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-74652913-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
